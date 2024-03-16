@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Social Links on Hover</title>
+<style>
+    .picture-container {
+        position: relative;
+        display: inline-block;
+        margin: 20px;
+    }
+
+    .picture {
+        display: block;
+        width: 300px; /* Регулируйте размер изображения по желанию */
+        height: auto;
+        transition: opacity 0.3s;
+    }
+
+    .social-links {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+
+    .picture-container:hover .social-links {
+        opacity: 1;
+    }
+
+    .social-links a {
+        display: block;
+        text-decoration: none;
+        color: #fff;
+        background-color: #333;
+        padding: 5px 10px;
+        margin: 5px 0;
+        border-radius: 5px;
+    }
+</style>
+</head>
+<body>
+
+<div class="picture-container">
+    <img src="your-image.jpg" alt="Your Picture" class="picture">
+    <div class="social-links">
+        <a href="https://www.facebook.com">Facebook</a>
+        <a href="https://www.twitter.com">Twitter</a>
+        <a href="https://www.instagram.com">Instagram</a>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,762 @@
+/* ! BOOTSTRAP CDN */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --red: #F6214A;
+    --black: #222222;
+    --lightest-grey: #F9F9FE;
+    --txt-gray: #777;
+    --white: #fff;
+}
+
+::selection {
+    background: var(--red); 
+}
+
+.container {
+    padding: 0 165px;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 999;
+}
+.header__section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 12vh;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.188);
+}
+
+header p {
+    font-size: 14px;
+    color: black;
+    font-weight: 500;
+}
+
+.phone {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.phone a {
+    color:  var(--black);
+}
+
+.phone_btn {
+    padding: 30px;
+    background-color: var(--red);
+}
+
+.phone_btn i {
+    color: white;
+}
+
+nav {
+    width: 100%;
+}
+
+nav ul {
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    align-items: center;
+}
+
+nav ul li a {
+    color: var(--black);
+    transition: 0.3s;
+    font-size: 12px;
+}
+
+nav ul li a:hover {
+    color: var(--red);
+}
+
+nav ul li:last-of-type:hover .fa-angle-down {
+    color: var(--red);
+}
+
+.main_top__section {
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)) ,url('https://preview.colorlib.com/theme/gym/img/header-bg.jpg.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    margin-top: -19vh;
+    z-index: 0;
+}
+
+.main_top__section h1 {
+    text-align: center;
+    color: white;
+    font-size: 60px;
+    line-height: 70px;
+}
+
+.main_top__section p {
+    color: var(--white);
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.care__section {
+    background-color: #fff;
+    padding-top: 125px;
+    padding-bottom: 125px;
+}
+
+.care__section h2 {
+    text-align: center;
+    color: var(--black);
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.care__section .unTitle {
+    color: var(--txt-gray);
+    margin-bottom: 16px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.care__section .unit {
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    gap: 30px;
+}
+
+.care__section .unit .card {
+    margin-top: 70px;
+    width: 350px;
+    height: 275px;
+    padding: 40px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0px 20px 60px 0px rgba(246, 33, 75, 0.3);
+}
+
+.care__section .unit .card h4 {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 18px;
+    color: var(--black);
+}
+
+.care__section .unit .card p {
+    text-align: center;
+    color: var(--txt-gray);
+    font-size: 14px;
+}
+
+.care__section .unit .card img {
+    width: 50px;
+    height: 50px;
+}
+
+.calculator__section {
+    width: 100%;
+    height: 425px;
+    background-color: var(--red);
+    padding-top: 100px;
+}
+
+.calculator__section h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+}
+
+.calculator__section p {
+    margin-bottom: 16px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 300;
+    color: var(--white);
+}
+
+.calculator__section form input {
+    width: 255px;
+    color: #fff;
+    font-size: 12px;
+    padding: 12px;
+    border-radius: 0;
+    background: transparent;
+    border: 1px solid #f96481;
+    outline: none;
+}
+.calculator__section form input::placeholder {
+    color: white;
+}
+.calculator__section form button {
+    width: 255px;
+    height: 44px;
+    border-radius: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #fff;
+    color: #222;
+    transition: all 0.3s ease 0s;
+    border: none;
+    font-weight: 600;
+}
+
+.calculator__section form button:hover {
+    background-color: var(--red);
+    border: solid 1px white;
+    cursor: pointer;
+}
+
+.calculator__section form {
+    margin-top: 70px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+
+.courses__section {
+    padding-top: 120px;
+
+}
+.courses__section h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.courses__section .unTitle {
+    margin-bottom: 16px;
+    color: var(--txt-gray);
+    font-size: 14px;
+    text-align: center;
+}
+
+.courses__section .courses_prices {
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.courses__section .courses_prices .card {
+    width: 350px;
+    height: 317px;
+    padding-bottom: 50px;
+    overflow: hidden;
+}
+.courses__section .courses_prices .card:hover .img___courses {
+    transform: scale(1.1);
+}
+.img___courses {
+    transition: .3s;
+}
+.courses__section .courses_prices .card .img {
+    width: 350px;
+    height: 206px;
+    z-index: 1;
+}
+.imgover {
+    overflow: hidden;
+}
+
+.courses__section .courses_prices .card .price {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.courses__section .courses_prices .card .price span {
+    color: var(--red);
+    font-weight: 600;
+    font-size: 18px;
+}
+.courses__section .courses_prices .card .price p {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.courses__section .courses_prices .card .img {
+    position: relative;
+    z-index: 1;
+}
+.availability_indicator {
+    position: absolute;
+    width: 196px;
+    height: 42px;
+    background-color: var(--red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+}
+.availability_indicator span {
+    color: white;
+    font-size: 14px;
+}
+.courses__section {
+    z-index: 1;
+    padding-bottom: 120px;
+}
+.revolutions__section {
+    height: 285px;
+    width: 100%;
+    background-color: #222222;
+    display: flex;
+    justify-content: center;
+}
+
+.revolutions__section .card {
+    width: 720px;
+    display: flex;
+}
+
+.revolutions__section .card img {
+    width: 320px;
+    height: 285px;
+    object-fit: cover;
+}
+
+.revolutions__section .descr {
+    padding: 0 70px;
+}
+
+.revolutions__section .descr .titleTop {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.749);
+    font-style: 100px;
+    letter-spacing: 3px;
+}
+
+.revolutions__section .descr h3 {
+    font-size: 36px;
+    padding: 15px 0;
+    color: var(--red);
+    line-height: 44px;
+}
+
+.revolutions__section .descr .titleBot {
+    color :var(--txt-gray);
+    font-size: 14px;
+    width: 220px;
+}
+
+.schedule__section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.schedule__section h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 36px;
+    font-weight: 600;
+}
+.schedule__section p {
+    margin-bottom: 16px;
+    font-size: 14px;
+    color: var(--txt-gray);
+    text-align: center;
+}
+
+.schedule__section td {
+    width: 157px;
+    height: 71px;
+    text-align: center;
+    border: 1px solid #dee2e6;
+    color: var(--txt-gray);
+    font-size: 14px;
+    transition: .2s;
+}
+.schedule__section tr {transition: .3s;}
+.schedule__section tr:hover {
+    background-color: var(--red);
+}
+.schedule__section tr:hover td{
+    color: white
+}
+
+.schedule__section th {
+    width: 157px;
+    height: 48px;
+    border: 0.5px solid #dee2e6;
+    font-size: 14px;
+    background-color: #E9ECEF;
+}
+
+table {
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+.trainers__section {
+    background-color: #F9F9FE;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.trainers__section h2 {
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.trainers__section p {
+    margin-bottom: 16px;
+    text-align: center;
+    color: var(--txt-gray);
+    font-size: 14px;
+}
+
+.trainers__section .unit {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 70px;
+}
+
+.trainers__section .unit .card {
+    width: 255px;
+    height: 381px;
+}
+
+.trainers__section .unit .card h4 {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.trainers__section .unit .card .img1 {background: url('https://preview.colorlib.com/theme/gym/img/t1.jpg');}
+.trainers__section .unit .card .img2 {background: url('https://preview.colorlib.com/theme/gym/img/t2.jpg');}
+.trainers__section .unit .card .img3 {background: url('https://preview.colorlib.com/theme/gym/img/t3.jpg');}
+.trainers__section .unit .card .img4 {background: url('https://preview.colorlib.com/theme/gym/img/t4.jpg');}
+.trainers__section .unit .card .img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 290px;
+    color: white;
+}
+
+
+.grad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 20px;
+    width: 100%;
+    background: linear-gradient(rgba(246, 33, 75, 0.6), rgba(246, 33, 76, 0.6));
+    opacity: 0;
+    transition: 0.3s;
+}
+.grad a {
+    color: var(--white);
+}
+
+.grad:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.plan__container {
+    padding-top: 100px;
+}
+
+.plan__container h2 {
+    text-align: center;
+    font-size: 36px;
+    color: var(--black);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.plan__container .unTitle {
+    font-size: 14px;
+    color: var(--txt-gray);
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.plan__container .unit {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.plan__container .unit .card {
+    width: 350px;
+    height: 587px;
+    background-color: #F9F9FE;
+}
+
+.plan__container .unit .card .head {
+    padding: 40px 40px 22px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.173);
+}
+.plan__container .unit .card .head .title h3 {
+    font-size: 18px;
+    font-weight: 600;
+}
+.plan__container .unit .card .head .title p {
+    color: var(--txt-gray);
+    margin-bottom: 16px;
+    width: 100%;
+    font-size: 14px;
+}
+
+.plan__container .price {
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--black);
+}
+
+.plan__container .unit .card .note {
+    padding: 40px 40px 22px;
+    color: var(--txt-gray);
+    font-size: 14px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.173);
+}
+
+.plan__container .unit .card .main {
+    padding: 40px 40px 22px;
+    font-size: 14px;
+    color: var(--txt-gray);
+    line-height: 40px;
+    transition: .3s;
+}
+
+.plan__container .unit .card .main button {
+    margin-top: 20px;
+    height: 44px;
+    background-color: var(--black);
+    border: none;
+    color: white;
+    font-size: 14px;
+    width: 210px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.plan__container .unit .card .main button i {
+    margin-left: 20px;
+    transition: 0.3s;
+}
+.bgr {
+    transition: 0.3s;
+}
+.plan__container .unit .card:hover .bgr {
+    background-color: var(--red);
+    color: white
+}
+
+.plan__container .unit .card:hover .btn__plan {
+    background-color: var(--white);
+    color: var(--black);
+}
+.in_btn__plan {
+    transition: .3s;
+}
+.btn__plan:hover .in_btn__plan{
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.partners__section {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    height: 350px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.partners__section img{
+    width: 228px;
+    object-fit: cover;
+    filter: grayscale(1);
+    transition: .3s;
+    cursor: pointer;
+}
+
+.partners__section img:hover {
+    filter: grayscale(0);
+}
+
+.transaction__section {
+    padding-top: 125px;
+    background: linear-gradient(rgba(0, 0, 0, 0.543),rgba(0, 0, 0, 0.543)), url('https://preview.colorlib.com/theme/gym/img/callto-bg.jpg.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 428px;
+}
+
+.transaction__section h2 {
+    text-align: center;
+    color: white;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.transaction__section p {
+    text-align: center;
+    color: white;
+    padding: 20px 0;
+    margin-bottom: 16px;
+}
+
+.transaction__section button {
+    display: block;
+    margin: 0 auto;
+    background-color: var(--red);
+    width: 193px;
+    height: 44px;
+    color: white;
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 20px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.transaction__section button:hover {
+    background-color: rgba(255, 0, 0, 0);
+    border: 1px white solid;
+}
+
+footer {
+    padding-top: 125px;
+    padding-bottom: 125px;
+}
+footer .unit {
+    display: flex;
+    justify-content: center;
+}
+footer .box {
+    padding: 0 15px;
+}
+footer .box h3 {
+    font-size: 18px;
+    color: var(--black);
+    padding-bottom: 30px;
+}
+
+footer .box p {
+    font-size: 14px;
+    color: var(--txt-gray);
+    margin-bottom: 16px;
+}
+
+footer .box .tel {
+    font-size: 24px;
+    color: var(--red);
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+footer .box .input input {
+    width: 443px;
+    height: 36px;
+    padding: 6px 12px;
+    padding-right: 85px;
+    background-color: #F9F9FE;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+footer .box .input {
+    position: relative;
+    width: 443px;
+}
+footer .box .input button {
+    width: 78px;
+    height: 38px;
+    background-color: var(--red);
+    border: none;
+    border-radius: 20px;
+    color: white;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+
+.footer_bottom {
+    display: flex;
+    justify-content: space-between;
+    height: 44px;
+    width: 100%;
+    margin-top: 40px;
+    align-items: center
+}
+
+.footer_bottom p {
+    color: var(--txt-gray);
+    font-size: 14px;
+    padding: 0 15px;
+}
+
+.footer_bottom p a {
+    color: var(--red);
+}
+
+.footer_bottom .socials {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.footer_bottom .socials .box {
+    width: 40px;
+    height: 44px;
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: 0.3s;
+}
+
+.footer_bottom .socials .box:hover {
+    background-color: var(--red);
+    cursor: pointer;
+}
