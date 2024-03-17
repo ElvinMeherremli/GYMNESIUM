@@ -1,0 +1,254 @@
+@media screen and (max-width: 1245px) {
+    .revolutions__section {
+        height: 570px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .revolutions__section .card {
+        width: 100%;
+        justify-content: center;
+        gap: 35px;
+    }
+    .revolutions__section .card:nth-child(2) {
+        flex-direction: row-reverse;
+    }
+    .revolutions__section .card img {
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .care__section .unit .card {
+        margin-top: 70px;
+        width: 350px;
+        height: 330px;
+    }
+}
+
+@media screen and (max-width: 1159px) {
+    footer .unit {
+        flex-direction: column;
+        justify-content: center;
+        align-items: baseline;
+        gap: 50px;
+    }
+    .partners__section {
+        flex-wrap: wrap;
+    }
+    .container {
+        padding-right: 80px;
+        padding-left: 80px;
+        transition: .3s;
+    }
+    .plan__container .unit {
+        margin-top: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width: 908px) {
+    .transaction__section {
+        padding-top: 90px;
+        background: linear-gradient(rgba(0, 0, 0, 0.543),rgba(0, 0, 0, 0.543)), url('https://preview.colorlib.com/theme/gym/img/callto-bg.jpg.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 428px;
+    }
+}
+
+
+@media screen and (max-width: 872px) {
+    .container {
+        padding-right: 20px;
+        padding-left: 20px;
+        transition: .3s;
+    }
+    .care__section .unit {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    .care__section .unit .card {
+        height: 275px;
+        margin-top: 0;
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 722px) {
+    .trainers__section .unit {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 70px;
+        flex-wrap: wrap;
+    }
+    .main_top__section h1 {
+        text-align: center;
+        color: white;
+        font-size: 40px;
+        line-height: 45px;
+        transition: .3s
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .header__section p {
+        display: none;
+    }
+    .header__section .phone{
+        display: none;
+    }
+    .header__section {
+        justify-content: center;
+    }
+    .header__section .menu_icon {
+        display: block;
+        position: absolute;
+        right: 40px
+    }
+    nav {
+        display: none;
+    }
+    .calculator__section form {
+        margin-top: 30px;
+        flex-wrap: wrap;
+    }
+    .calculator__section {
+        width: 100%;
+        height: 425px;
+        padding-top: 40px;
+    }
+    .calculator__section form input {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 605px) {
+    .revolutions__section .card {
+        width: 100%;
+        justify-content: center;
+        gap: 15px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .revolutions__section .card img {
+        width: 100%;
+    }
+    .revolutions__section .card:nth-child(2) {
+        flex-direction: column;
+    }
+    .revolutions__section {
+        height: 920px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 25px;
+    }
+    .revolutions__section .descr {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 10px;
+    }
+} 
+
+@media screen and (max-width: 580px) {
+    .transaction__section {
+        padding-top: 40px;
+    }
+    .transaction__section h2 {
+        font-size: 25px;
+    }
+    .care__section {
+        padding-top: 30px;
+    }
+    .care__section h2{
+        font-size: 25px;
+    }
+    .calculator__section h2 {
+        font-size: 25px;
+    }
+    .courses__section {
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+    .courses__section h2 {
+        font-size: 25px;
+    }
+    .schedule__section {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .schedule__section h2 {
+        font-size: 25px;
+    }
+    .schedule__section table {
+        margin-top: 20px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .trainers__section {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .trainers__section h2 {
+        font-size: 25px;
+    }
+    .plan__container {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .plan__container h2 {
+        font-size: 25px;
+    }
+    .partners__section {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .partners__section img {
+        width: 100px;
+    }
+    footer .box .input input {
+        width: 300px;
+    }
+    footer .box .input {
+        width: 300px;
+    }
+    .footer_bottom {
+        display: flex;
+        justify-content: space-between;
+        height: 44px;
+        width: 100%;
+        flex-direction: column;
+        margin-top: 80px;
+        gap: 20px;
+        align-items: center
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .revolutions__section {
+        height: 1180px;
+        flex-direction: column;
+        gap: 0;
+    }
+    .revolutions__section .descr {
+        display: block;
+    }
+    .care__section .unit .card {
+        height: 275px;
+        margin-top: 0;
+        width: 350px;
+    }
+}
+@media screen and (max-width: 430px) {
+    footer .contact p {
+        width: 280px;
+    }
+}

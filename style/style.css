@@ -70,6 +70,10 @@ header p {
     color: white;
 }
 
+.header__section .menu_icon {
+    display: none;
+}
+
 nav {
     width: 100%;
 }
@@ -91,6 +95,8 @@ nav ul li a {
 nav ul li a:hover {
     color: var(--red);
 }
+
+
 
 nav ul li:last-of-type:hover .fa-angle-down {
     color: var(--red);
@@ -156,7 +162,7 @@ nav ul li:last-of-type:hover .fa-angle-down {
 .care__section .unit .card {
     margin-top: 70px;
     width: 350px;
-    height: 275px;
+    min-height: 275px;
     padding: 40px 30px 30px;
     display: flex;
     flex-direction: column;
@@ -185,7 +191,6 @@ nav ul li:last-of-type:hover .fa-angle-down {
 
 .calculator__section {
     width: 100%;
-    height: 425px;
     background-color: var(--red);
     padding-top: 100px;
 }
@@ -215,6 +220,7 @@ nav ul li:last-of-type:hover .fa-angle-down {
     background: transparent;
     border: 1px solid #f96481;
     outline: none;
+    margin-bottom: 100px;
 }
 .calculator__section form input::placeholder {
     color: white;
@@ -347,10 +353,11 @@ nav ul li:last-of-type:hover .fa-angle-down {
     width: 320px;
     height: 285px;
     object-fit: cover;
+    margin-right: 35px;
 }
 
 .revolutions__section .descr {
-    padding: 0 70px;
+    padding: 0 0px;
 }
 
 .revolutions__section .descr .titleTop {
@@ -603,7 +610,6 @@ table {
     display: flex;
     justify-content: center;
     gap: 30px;
-    height: 350px;
     padding-top: 120px;
     padding-bottom: 120px;
 }
@@ -638,10 +644,12 @@ table {
 }
 
 .transaction__section p {
+    margin: 0 auto;
     text-align: center;
     color: white;
     padding: 20px 0;
     margin-bottom: 16px;
+    max-width: 1110px;
 }
 
 .transaction__section button {
@@ -720,6 +728,12 @@ footer .box .input button {
     cursor: pointer;
 }
 
+footer .about p {
+    width: 255px;
+}
+footer .contact p {
+    width: 350px;
+}
 .footer_bottom {
     display: flex;
     justify-content: space-between;
